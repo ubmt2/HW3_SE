@@ -1,3 +1,6 @@
 #!/bin/bash
-chmod 777 generate.py
-python3 generate.py
+
+
+case "$1" in 
+ "build_generator" ) docker build -t generator_app ./generator
+ 
