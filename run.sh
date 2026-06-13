@@ -17,6 +17,12 @@ case "$1" in
     "run_reporter")
     docker run --rm -v "$(pwd)/data:/data" reporter-app
     ;;
+    "structure")
+    tree
+    ;;
+    "clear_data")
+    sudo rm data/*
+    ;;
 
  esac
  
