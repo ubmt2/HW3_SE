@@ -23,6 +23,10 @@ case "$1" in
     "clear_data")
     sudo rm data/*
     ;;
+    "inside_generator")
+    docker run --rm -v "$(pwd)/data:/data" generator-app
+    ls -la /data
+    ;;
 
  esac
  
