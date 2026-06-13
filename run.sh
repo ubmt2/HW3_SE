@@ -26,6 +26,9 @@ case "$1" in
     "inside_generator")
     docker run --rm -v "$(pwd)/data:/data" generator-app ls -la /data
     ;;
+    "inside_reporter")
+    docker run --rm -v "$(pwd)/data:/data" reporter-app ls -la /data
+    ;;
 
  esac
  
