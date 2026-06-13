@@ -24,8 +24,7 @@ case "$1" in
     sudo rm data/*
     ;;
     "inside_generator")
-    docker run --rm -v "$(pwd)/data:/data" generator-app
-    ls -la /data
+    docker run --rm -v "$(pwd)/data:/data" generator-app ls -la /data
     ;;
 
  esac
