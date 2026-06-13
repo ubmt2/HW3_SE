@@ -1,5 +1,8 @@
 /data
 
+**/package-lock.json
 package-lock.json
 /node_modules
-/local_data
+*/local_data
+**/data
+**/data.csv
